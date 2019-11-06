@@ -1,0 +1,225 @@
+/* For NAV-bar */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+
+#styledImg {
+    width: 100%;
+}
+
+.card-title {
+    color: #28a745;
+    font-size: 15px;
+}
+
+#navForm {
+    width: 500px;
+}
+
+#navInput {
+    width: 418px;
+}
+
+#button {
+    background-color: lightgray;
+    color: black;
+}
+
+.container1 {
+    width: 100%;
+}
+
+.card-body {
+    background-color: #343a40;
+}
+
+.card, .card1, .card2, .card3 {
+    background-color: #343a40;
+    color: white;
+    border: 1px solid #28a745;
+    width: 100%;
+}
+
+.navbarDropdown {
+    background-color: #28a745;
+    color: white;
+}
+
+/* For Twitch Feature HTML */
+.cardSearchgame
+{
+    max-width: 25%;
+    min-width: 25%;
+}
+.header
+{
+    padding: 30px;
+    padding-left: 0px;
+    
+}
+.allchannelImage {
+    width: 10%;
+}
+
+#channel-image{
+    width: 100%;
+}
+.card10
+{
+    background: black;   
+    min-width: 25%;
+    max-width: 25%;
+}
+
+.card-body10{
+    padding: 5px;
+    background: black;
+}
+.card-title10{
+    color: red;
+    margin-bottom: 1px;
+}
+.card-footer10{
+    padding: 5px;
+    text-align: right;
+}
+.totheRight{
+    text-align: center;
+}
+#icon {
+    color: red;
+}
+#viewer-game-count,
+#viewer-Channel-count {
+    display: inline;
+}
+#twitch-embed {
+    height: 80vh;
+}
+
+/* Front page  */
+#reviewLink, #twitchLink {
+    width: 205px;
+}
+
+#imageClips {
+    width: 100%;
+}
+
+#loginLogo, #signUp {
+    background-color: #343a40;
+    width: 18rem;
+}
+
+.overlay {
+    border: 2px solid #28a745;
+    max-height: 75px;
+    overflow: hidden;
+}
+
+.topClips a {
+    color: #fff;
+}
+
+.topClips a:hover {
+    color: #28a745;
+    text-decoration: none;
+}
+
+#login-box {
+    position: relative;
+    margin: 5% auto;
+    height: 400px;
+    width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.left-box {
+    position: absolute;
+    box-sizing: border-box;
+    background: #343a40;
+    border: 1px double #28a745;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+input[type="text"], input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: 1px solid #28a745;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+input[type="submit"] {
+    margin-bottom: 28px;
+    width: 120px;
+    height: 32px;
+    border-radius: 2px;
+    border: 1px solid #28a745;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+/* for reviews feature html */
+#random-game{
+    max-width: 100%;
+    align-content: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+div[class^="random-game"]{
+    max-width: 30%;
+    margin: 20px;
+    flex-direction: row;
+}
+
+.game-img{
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+#random-game .row{
+    margin: 0;
+}
+.game-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trailer-link{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.rating{
+    color: #28a745;
+}
+
+#metacritic a{
+    color: white;
+    text-decoration: underline;
+}
+.trailer-link{
+    color:#28a745;
+}

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Button Mash</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="ASSETS/CSS/style.css">
+
+    <!-- Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Javascript Link  -->
+    <script defer src="ASSETS/JAVASCRIPT/Twitch-JS.Js"></script>
+
+    <!-- Twitch Embed  -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#"><img src="assets/IMAGES/groupProjectButton.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><button type="button"
+                            class="btn btn-outline-success btn-sm">HOME</button></a>
+                </li>
+                <li class="nav-item active">
+                    <div class="pt-2" style="width: 70px;"><button type="button" class="btn btn-outline-success btn-sm"
+                            data-toggle="modal" data-target="#loginLogo">LOG IN</button></div>
+                </li>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="signUp.html"><button type="button"
+                            class="btn btn-outline-success btn-sm">SIGN UP</button></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+
+            <button type="button" class="btn btn-outline-success btn-sm" id="reviewLink" aria-pressed="true">Search
+                Reviews</button> <button type="button" class="btn btn-outline-success btn-sm" id="twitchLink"
+                aria-pressed="true">Search Streams</button>
+
+            <form id="navForm1" class="form-inline my-2 my-sm-0" action="Review-Feature.html" method="GET"
+                style="display:none">
+                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Games & Reviews"
+                    aria-label="Search" name="navSearch">
+                <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm active" type="submit"
+                    id="submit">Search</button>
+            </form>
+            <form id="navForm2" class="form-inline my-2 my-sm-0" action="Twitch-Feature.html" method="GET">
+                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Streams & Streamers"
+                    aria-label="Search" name="navSearch">
+                <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit" id="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Added for Twitch -->
+    <form>
+        <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm btn-block" type="submit" id="feature-Game">Top
+            Games</button>
+        <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm btn-block" type="submit"
+            id="feature-Streamer">Featured
+            Streamers</button>
+    </form>
+    <!-- Where all the information gonna be store -->
+    <div class="twitchInfo">
+        <div class="header">
+
+        </div>
+
+        <div class="feature card-group">
+
+        </div>
+
+        <div id="twitch-embed">
+
+        </div>
+
+        <div class="card-footer text-center"> <a href="https://www.twitch.tv/directory" target="_blank"
+                class="btn btn-secondary">Visit Twitch.tv For more Channels and Games</a></div>
+    </div>
+
+
+    <div id="loginLogo" class="modal card">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <img src="ASSETS/IMAGES/groupProjectLogo.png" class="card-img-top" alt="buttonMash">
+        <div class="card-body">
+            <p class="card-text-center">
+                <p><img src="ASSETS/IMAGES/logInbutton.png"></p>
+
+                <form class="form-inline">
+                    <label class="sr-only" for="inlineFormInputName2">Login name or Email Adress</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputEmail2"
+                        placeholder="email@address.com">
+
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">Password</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                            <input type="text" class="form-control" id="inlineFormInputPassword2"
+                                placeholder="..................">
+                        </div>
+
+                        <div class="form-check mb-2 mr-sm-2">
+                            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                            <label class="form-check-label" for="inlineFormCheck">
+                                Save Game
+                            </label>
+                        </div>
+                        <a href="index.html" class="btn btn-outline-success btn-sm"><img
+                                src="ASSETS/IMAGES/logoButton2.png"></a>
+                    </div>
+                </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
